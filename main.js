@@ -16,48 +16,48 @@ function calculateChange(salePrice, amountReceived) {
 
     let result = {};
 
-    let moreMoney = salePrice
-    if (amountReceived < moreMoney) {
-        let amount = moreMoney - amountReceived
-        amount = amount.toFixed(2)
-        result.moreMoney = "MISSING AMOUNT: $" + amount;
-    }
+    // let moreMoney = salePrice
+    // if (amountReceived < moreMoney) {
+    //     let amount = moreMoney - amountReceived
+    //     amount = amount.toFixed(2)
+    //     result.moreMoney = "MISSING AMOUNT: $" + amount;
+    // }
 
-    let hundredDollarBill = Math.floor(change / 10000);
-    if (hundredDollarBill > 0) {
-        result.hundredDollarBill = hundredDollarBill;
-    }
-    change = change % 10000;
+    // let hundredDollarBill = Math.floor(change / 10000);
+    // if (hundredDollarBill > 0) {
+    //     result.hundredDollarBill = hundredDollarBill;
+    // }
+    // change = change % 10000;
 
-    let fiftyDollarBill = Math.floor(change / 5000);
-    if (fiftyDollarBill > 0) {
-        result.fiftyDollarBill = fiftyDollarBill;
-    }
-    change = change % 5000;
+    // let fiftyDollarBill = Math.floor(change / 5000);
+    // if (fiftyDollarBill > 0) {
+    //     result.fiftyDollarBill = fiftyDollarBill;
+    // }
+    // change = change % 5000;
 
-    let twentyDollarBill = Math.floor(change / 2000);
-    if (twentyDollarBill > 0) {
-        result.twentyDollarBill = twentyDollarBill;
-    }
-    change = change % 2000;
+    // let twentyDollarBill = Math.floor(change / 2000);
+    // if (twentyDollarBill > 0) {
+    //     result.twentyDollarBill = twentyDollarBill;
+    // }
+    // change = change % 2000;
 
-    let tenDollarBill = Math.floor(change / 1000);
-    if (tenDollarBill > 0) {
-        result.tenDollarBill = tenDollarBill;
-    }
-    change = change % 1000;
+    // let tenDollarBill = Math.floor(change / 1000);
+    // if (tenDollarBill > 0) {
+    //     result.tenDollarBill = tenDollarBill;
+    // }
+    // change = change % 1000;
 
-    let fiveDollarBill = Math.floor(change / 500);
-    if (fiveDollarBill > 0) {
-        result.fiveDollarBill = fiveDollarBill;
-    }
-    change = change % 500;
+    // let fiveDollarBill = Math.floor(change / 500);
+    // if (fiveDollarBill > 0) {
+    //     result.fiveDollarBill = fiveDollarBill;
+    // }
+    // change = change % 500;
 
-    let twoDollarBill = Math.floor(change / 200);
-    if (twoDollarBill > 0) {
-        result.twoDollarBill = twoDollarBill;
-    }
-    change = change % 200;
+    // let twoDollarBill = Math.floor(change / 200);
+    // if (twoDollarBill > 0) {
+    //     result.twoDollarBill = twoDollarBill;
+    // }
+    // change = change % 200;
 
     let Dollars = Math.floor(change / 100);
     if (Dollars > 0) {
